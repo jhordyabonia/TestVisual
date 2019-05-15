@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Examen Visual</string>
+
+    <string name="adds">ca-app-pub-7036101536380541/1832083232</string>
+    <string name="ad_unit_id">ca-app-pub-7036101536380541~4641724180</string>
+    <string name="dummy_button">Empezar</string>
+    <string name="dummy_title">¿QUÉ TAN BIEN ESTÁS DE LA VISTA?</string>
+    <string name="dummy_content">
+        Al empezar, veras la imagen que le ha dado la vuelta al mundo y asegura que si ves un número específico, puedes tener las siguientes condiciones:\n\n
+
+        3246: Astigmatismo y Miopía \n
+        3240: Astigmatismo\n
+        1246: Miopíco de luz sin Astigmatismo\n
+        1240: Ojos saludables.\n\n
+
+        Aunque médicos especializados aseguran que no se puede tomar un diagnóstico certero por esta imagen.\n\n
+
+        pidieron a quienes tengan problemas en la vista que a pesar del número que vean, es preferible que consulten a un especialista y no saquen conclusiones sin un chequeo médico.\n\n
+
+        Sabiendo lo anterior, mira por 3 segundos, ¿qué número ves?
+    </string>
+</resources>
