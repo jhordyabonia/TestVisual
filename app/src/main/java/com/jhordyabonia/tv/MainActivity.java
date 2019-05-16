@@ -3,12 +3,16 @@ package com.jhordyabonia.tv;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
+import android.widget.TextView;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -31,16 +35,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportActionBar().hide();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         findViewById(R.id.dummy_button).setOnClickListener(this);
+        TextView t2 = findViewById(R.id.policy);
+        t2.setMovementMethod(LinkMovementMethod.getInstance());
+
+        findViewById(R.id.policy).setOnClickListener(this);
+        findViewById(R.id.more_apps).setOnClickListener(this);
+        findViewById(R.id.ours).setOnClickListener(this);
+
 
         interstitialAd = new InterstitialAd(this);
         ads();
     }
     @Override
     public void onClick(View v) {
-
-        if(interstitialAd.isLoaded())
-            interstitialAd.show();
-        else loadInterstitial();
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        switch (v.getId()){
+            case R.id.dummy_button:
+                if(interstitialAd.isLoaded())
+                    interstitialAd.show();
+                else loadInterstitial();
+                break;
+            case R.id.policy:
+                i.setData(Uri.parse("https://jhordyabonia.azurewebsites.net/visual_exam/policy/"));
+                startActivity(i);
+                break;
+            case R.id.more_apps:
+                i.setData(Uri.parse("https://play.google.com/store/apps/developer?id=Jhordy+Abonia"));
+                startActivity(i);
+                break;
+            case R.id.ours:
+                i.setData(Uri.parse("https://jhordyabonia.azurewebsites.net/ours/"));
+                startActivity(i);
+                break;
+        }
     }
     private void startGame(){
         findViewById(R.id.content).setVisibility(View.GONE);

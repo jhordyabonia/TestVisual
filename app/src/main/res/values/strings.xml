@@ -19,4 +19,7 @@
 
         Sabiendo lo anterior, mira por 3 segundos, ¿qué número ves?
     </string>
+    <string name="policy"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Politicas de privacidad</a></string>
+    <string name="ours"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Nosotros</a></string>
+    <string name="more_apps"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Mas Apps</a></string>
 </resources>

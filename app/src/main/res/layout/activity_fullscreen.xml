@@ -10,15 +10,16 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
+
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="fill_horizontal|top"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="50dp"
+        android:gravity="fill_horizontal|top"
         android:orientation="vertical">
 
         <TextView
@@ -39,7 +40,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/fullscreen_content"
@@ -60,6 +61,42 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/ours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/ours"
+            android:textColor="#0000A0"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/more_apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/more_apps"
+            android:textColor="#0000A0"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/policy"
+            android:textColor="#0000A0" />
+    </TableRow>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -95,6 +132,7 @@
         android:gravity="center"
         android:text="Cargando..."
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="gone" />
 
 </FrameLayout>
