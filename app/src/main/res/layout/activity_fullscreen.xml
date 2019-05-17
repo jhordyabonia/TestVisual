@@ -62,31 +62,34 @@
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
     <TableRow
+        android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="15dp">
+        android:layout_marginRight="15dp"
+        android:gravity="center">
 
         <TextView
-            android:id="@+id/ours"
+            android:id="@+id/test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Consultas: 0"
             android:autoLink="web"
             android:linksClickable="true"
-            android:text="@string/ours"
-            android:textColor="#0000A0"
-            android:paddingRight="15dp"/>
+            android:paddingRight="15dp"
+            android:textColor="#0000A0" />
+
         <TextView
             android:id="@+id/more_apps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoLink="web"
             android:linksClickable="true"
+            android:paddingRight="15dp"
             android:text="@string/more_apps"
-            android:textColor="#0000A0"
-            android:paddingRight="15dp"/>
+            android:textColor="#0000A0" />
+
         <TextView
             android:id="@+id/policy"
             android:layout_width="wrap_content"
