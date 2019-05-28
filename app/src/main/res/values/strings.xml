@@ -3,23 +3,25 @@
 
     <string name="adds">ca-app-pub-7036101536380541/2882414790</string>
     <string name="ad_unit_id">ca-app-pub-7036101536380541~4641724180</string>
-    <string name="dummy_button">Empezar</string>
-    <string name="dummy_title">¿QUÉ TAN BIEN ESTÁS DE LA VISTA?</string>
+    <string name="dummy_button">Start</string>
+    <string name="dummy_title">WHAT ARE YOU SO WELL FROM THE SIGHT?</string>
     <string name="dummy_content">
-        Al empezar, veras la imagen que le ha dado la vuelta al mundo y asegura que si ves un número específico, puedes tener las siguientes condiciones:\n\n
+        At the beginning, you will see the image that has been around the world and ensures that if you see a specific number, you can have the following conditions:\n\n
 
-        3246: Astigmatismo y Miopía \n
-        3240: Astigmatismo\n
-        1246: Miopíco de luz sin Astigmatismo\n
-        1240: Ojos saludables.\n\n
+        3246: Astigmatism and myopia \n
+        3240: Astigmatism\n
+        1246: Myopic of light without Astigmatism\n
+        1240: Healthy eyes.\n\n
 
-        Aunque médicos especializados aseguran que no se puede tomar un diagnóstico certero por esta imagen.\n\n
+        Although specialized doctors assure that an accurate diagnosis can not be taken by this image.\n\n
 
-        pidieron a quienes tengan problemas en la vista que a pesar del número que vean, es preferible que consulten a un especialista y no saquen conclusiones sin un chequeo médico.\n\n
+        They asked those who have vision problems that despite the number they see, it is preferable that they consult a specialist and not draw conclusions without a medical check-up.\n\n
 
-        Sabiendo lo anterior, mira por 3 segundos, ¿qué número ves?
+        Knowing the above, look for 3 seconds, what number do you see?
     </string>
-    <string name="policy"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Politicas de privacidad</a></string>
-    <string name="ours"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Nosotros</a></string>
-    <string name="more_apps"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Mas Apps</a></string>
+    <string name="policy"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Privacy policies</a></string>
+    <string name="ours"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">Consultations: </a></string>
+    <string name="more_apps"><a href="https://jhordyabonia.azurewebsites.net/visual_exam/policy/">More Apps</a></string>
+    <string name="loading">Loading...</string>
+    <string name="win">Won</string>
 </resources>

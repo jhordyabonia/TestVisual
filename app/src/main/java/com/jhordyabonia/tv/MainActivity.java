@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             findViewById(R.id.loading).setVisibility(View.VISIBLE);
             ((TextView)findViewById(R.id.loading))
-                    .setText("Cargando...");
+                    .setText(R.string.loading);
             loading = true;
         }
     }
@@ -198,10 +198,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         test += reward;
 
         ((TextView)findViewById(R.id.test))
-                .setText("Consultas: "+test);
+                .setText(getString(R.string.ours)+test);
 
         ((TextView)findViewById(R.id.loading))
-                .setText("Ganaste: "+reward+" consultas");
+                .setText(getString(R.string.win)+reward+" "+getString(R.string.ours));
     }
 
     @Override
